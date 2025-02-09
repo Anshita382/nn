@@ -9,10 +9,17 @@ This project creates a Python package that interacts with Gainesville's Crime Re
 ## How to install
 
 ```bash
-pipenv install -e .
+pip install pipenv
+```
+```bash
+pipenv install -e
+```
+This will install all necessary dependensies and sets up the enviroment for development
+```bash
+pipenv install pytest requests
 ```
 
-## How to run
+## How to run the application
 
 For API data retrieval:
 ```bash
@@ -23,7 +30,12 @@ pipenv run python main.py --url https://data.cityofgainesville.org/resource/gvua
 
 Example command:
 ```bash
-pipenv run python main.py --url https://data.cityofgainesville.org/resource/gvua-xt9q.json --offset 0 --limit 2
+pipenv run python main.py --url https://data.cityofgainesville.org/resource/gvua-xt9q.json --offset 0 --limit 5
+```
+
+For local file processing:
+```bash
+pipenv run python main.py --file <FILENAME> --offset <OFFSET> --limit <LIMIT>
 ```
 
 Output:
