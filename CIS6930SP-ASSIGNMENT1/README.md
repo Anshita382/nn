@@ -19,11 +19,6 @@ For API data retrieval:
 pipenv run python main.py --url https://data.cityofgainesville.org/resource/gvua-xt9q.json --offset <OFFSET> --limit <LIMIT>
 ```
 
-For local file processing:
-```bash
-pipenv run python main.py --file <FILENAME> --offset <OFFSET> --limit <LIMIT>
-```
-
 ## Example
 
 Example command:
