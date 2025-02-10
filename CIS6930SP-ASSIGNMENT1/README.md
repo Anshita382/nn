@@ -25,6 +25,10 @@ For API data retrieval:
 ```bash
 pipenv run python main.py --url https://data.cityofgainesville.org/resource/gvua-xt9q.json --offset <OFFSET> --limit <LIMIT>
 ```
+## How to run tests
+```bash
+pipenv run python -m pytest -v
+```
 
 ## Example
 
