@@ -48,11 +48,11 @@ Theft Petit - Retailþ2025-01-20T20:23:15.000þ2025-01-20T19:53:00.000þ29.67054
 
 #### main.py
 - downloaddata() - Downloads crime data from the API URL using requests library, handling pagination
-- parse_data() - Processes the downloaded data into the required thorn-separated format
+- parse_data() - Processes the downloaded data(incident_type, report_date, offense_date, latitude, longitude) into the required thorn-separated format. 
 - main() - Orchestrates the data retrieval and processing flow based on command line arguments
 
 #### parsefile.py
-- dojsonparse() - Extracts required fields from JSON data and formats them with thorn separators
+- dojsonparse() - Extracts required fields(incident_type, report_date, offense_date, latitude, longitude) from JSON data and formats them with thorn separators
 - validate_fields() - Ensures data integrity and handles missing or null values
 
 ## Bugs and Assumptions
